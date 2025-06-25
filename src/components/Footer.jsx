@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='p-4 md:px-16 border-t border-gray-500 mt-5 flex gap-3 flex-col md:flex-row items-center justify-between'>
-        <div className='flex text-2xl gap-3.5 text-gray-500'>
+    <div className='p-4 md:px-16 border-t border-gray-700 mt-5 flex gap-3 flex-col md:flex-row items-center justify-between'>
+        <div className='flex text-2xl gap-3.5 text-gray-700 my-5 md:my-0'>
           <FaFacebook/>
           <FaInstagram/>
           <FaGithub/>

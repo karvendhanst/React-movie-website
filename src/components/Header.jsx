@@ -43,7 +43,7 @@ const Header = () => {
                         <HeaderMenus Icon={item.icon} name="" key={index}/>
                     ))}
                     <HiDotsVertical className='cursor-pointer' onClick={() => setMenu(!menu)} />
-                    {menu && <div className='bg-gray-600 flex flex-col gap-3 absolute right-0 md:-right-26 z-20 top-6 p-3 rounded text-[16px] border-2 border-gray-800/15'>
+                    {menu && <div className='bg-gray-800 flex flex-col gap-3 absolute right-0 md:-right-26 z-20 top-6 p-3 rounded text-[16px] border-2 border-gray-800/15'>
                         {menus.map((item, index) => index > 2 && (
                             <HeaderMenus Icon={item.icon} name={item.name} key={index}/>
                         ))}
