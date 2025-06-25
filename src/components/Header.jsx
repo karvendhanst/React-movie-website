@@ -31,7 +31,7 @@ const Header = () => {
     return (
         <div className='md:px-16 flex items-center justify-between p-4'>
             <div className='flex items-center gap-7'>
-                <img src={logo} alt="" className='w-20' />
+                <img src={logo} alt="" className='w-17 md:w-20' />
 
                 <div className='hidden md:flex gap-5 items-center text-white'>
                     {menus.map((item,index) => (
@@ -43,7 +43,7 @@ const Header = () => {
                         <HeaderMenus Icon={item.icon} name="" key={index}/>
                     ))}
                     <HiDotsVertical className='cursor-pointer' onClick={() => setMenu(!menu)} />
-                    {menu && <div className='bg-gray-600 flex flex-col gap-3 absolute -right-26 top-6 p-3 rounded text-[16px] border-2 border-gray-800/15'>
+                    {menu && <div className='bg-gray-600 flex flex-col gap-3 absolute right-0 md:-right-26 z-20 top-6 p-3 rounded text-[16px] border-2 border-gray-800/15'>
                         {menus.map((item, index) => index > 2 && (
                             <HeaderMenus Icon={item.icon} name={item.name} key={index}/>
                         ))}
@@ -52,7 +52,7 @@ const Header = () => {
             </div>
 
             <div>
-                <img src={profilePic} alt="" className='w-12 rounded-full cursor-pointer' />
+                <img src={profilePic} alt="" className='w-8 md:w-12 rounded-full cursor-pointer' />
             </div>
 
         </div>

@@ -15,6 +15,8 @@ const Genregetdata = (props) => {
         slidesToScroll: 1,
         cssEase: "linear",
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 900,
